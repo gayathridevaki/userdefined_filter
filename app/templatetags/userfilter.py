@@ -1,6 +1,7 @@
 from django import template
 register=template.Library()
 
+@register.filter()
 def swap(value):
     return value.swapcase()
 
